@@ -53,6 +53,7 @@
     {
         [self.delegate searchViewWillAppear:self];
     }
+    [self.searchBar becomeFirstResponder];
     [view addSubview:self];
 }
 
@@ -103,7 +104,6 @@
         UIView *searchBarBG = [[UIView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.frame), 64)];
         searchBarBG.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleBottomMargin;
         searchBarBG.backgroundColor = COLOR_WITH_HEX(0xf0eff5);
-        [self addSubview:searchBarBG];
         _searchBarBG = searchBarBG;
         return searchBarBG;
     }
