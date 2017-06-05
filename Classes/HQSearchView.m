@@ -86,7 +86,13 @@
     [self remove];
 }
 
-
+- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText
+{
+    if([self.delegate respondsToSelector:@selector(searchView:textDidChange:)])
+    {
+        [self.delegate searchView:self textDidChange:searchText];
+    }
+}
 
 #pragma mark - setter
 

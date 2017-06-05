@@ -35,4 +35,10 @@
     return _searchView;
 }
 
+#pragma mark - HQSearchViewDelegate
+- (void)searchView:(HQSearchView *)searchView textDidChange:(NSString *)searchText
+{
+    NSLog(@"searchText %@",searchText);
+}
+
 @end

@@ -12,7 +12,7 @@
 @optional
 - (void)searchViewWillAppear:(HQSearchView *)searchView;
 - (void)searchViewWillDisappear:(HQSearchView *)searchView;
-
+- (void)searchView:(HQSearchView *)searchView textDidChange:(NSString *)searchText;
 @end
 
 
