@@ -34,7 +34,7 @@
     [super layoutSubviews];
     self.searchBar.frame = CGRectMake(0, 20, CGRectGetWidth(self.frame), 44);
     self.searchBarBG.frame = CGRectMake(0, 0, CGRectGetWidth(self.frame), 64);
-    self.tableView.frame = CGRectMake(0, 64, CGRectGetHeight(self.frame), CGRectGetWidth(self.frame) - 64);
+    self.tableView.frame = CGRectMake(0, 64, CGRectGetWidth(self.frame), CGRectGetHeight(self.frame) - 64);
     self.visualEfView.frame = self.bounds;
 }
 
@@ -88,6 +88,8 @@
 
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText
 {
+    self.tableView.hidden = !searchText.length;
+
     if([self.delegate respondsToSelector:@selector(searchView:textDidChange:)])
     {
         [self.delegate searchView:self textDidChange:searchText];
