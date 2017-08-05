@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA12B2BB1EE5462300E446D5 /* HQSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA12B2BA1EE5462300E446D5 /* HQSearchViewController.m */; };
 		EADE51B61EBC49490032B006 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EADE51B51EBC49490032B006 /* main.m */; };
 		EADE51B91EBC49490032B006 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EADE51B81EBC49490032B006 /* AppDelegate.m */; };
 		EADE51BC1EBC49490032B006 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EADE51BB1EBC49490032B006 /* ViewController.m */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA12B2B91EE5462300E446D5 /* HQSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQSearchViewController.h; sourceTree = "<group>"; };
+		EA12B2BA1EE5462300E446D5 /* HQSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQSearchViewController.m; sourceTree = "<group>"; };
 		EADE51B11EBC49490032B006 /* HQSearchViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HQSearchViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EADE51B51EBC49490032B006 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EADE51B71EBC49490032B006 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -88,6 +91,8 @@
 			children = (
 				EADE51CF1EBC674D0032B006 /* HQSearchView.h */,
 				EADE51D01EBC674D0032B006 /* HQSearchView.m */,
+				EA12B2B91EE5462300E446D5 /* HQSearchViewController.h */,
+				EA12B2BA1EE5462300E446D5 /* HQSearchViewController.m */,
 			);
 			name = Classes;
 			path = ../../Classes;
@@ -165,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA12B2BB1EE5462300E446D5 /* HQSearchViewController.m in Sources */,
 				EADE51BC1EBC49490032B006 /* ViewController.m in Sources */,
 				EADE51B91EBC49490032B006 /* AppDelegate.m in Sources */,
 				EADE51B61EBC49490032B006 /* main.m in Sources */,

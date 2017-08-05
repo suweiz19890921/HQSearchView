@@ -19,6 +19,8 @@
 @interface HQSearchView : UIView
 @property (nonatomic, weak) id<HQSearchViewDelegate> delegate;
 
+@property(nonatomic, strong) UIColor *tintColor;
+
 /** 搜索占位文字 */
 @property (nonatomic, strong) NSString *placeholder;
 

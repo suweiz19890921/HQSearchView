@@ -24,6 +24,7 @@
     {
         self.placeholder = @"搜索";
         self.backgroundColor = [UIColor clearColor];
+        self.tintColor = COLOR_WITH_HEX(0xff7116);
         [self loadSubview];
     }
     return self;
@@ -131,7 +132,7 @@
         searchBar.barTintColor      = COLOR_WITH_HEX(0xf0eff5);
         searchBar.layer.borderColor = COLOR_WITH_HEX(0xf0eff5).CGColor;
         searchBar.layer.borderWidth = 1.0f;
-        searchBar.tintColor         = COLOR_WITH_HEX(0xff7116);
+        searchBar.tintColor         = self.tintColor;
         
         [[UIBarButtonItem appearanceWhenContainedIn:[UISearchBar class], nil]
          setTitleTextAttributes:
