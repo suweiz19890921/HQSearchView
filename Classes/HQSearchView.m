@@ -23,9 +23,8 @@
     if(self)
     {
         _placeholder = @"搜索";
-        self.backgroundColor = [UIColor clearColor];
         _tintColor = COLOR_WITH_HEX(0xff7116);
-        [self loadSubview];
+        self.backgroundColor = [UIColor clearColor];
     }
     return self;
 }
@@ -48,8 +47,11 @@
     [self.searchBarBG addSubview:self.searchBar];
 }
 
+
 - (void)showInView:(UIView *)view
 {
+    [self loadSubview];
+
     if([self.delegate respondsToSelector:@selector(searchViewWillAppear:)])
     {
         [self.delegate searchViewWillAppear:self];
@@ -141,7 +143,7 @@
         searchBar.placeholder = _placeholder;
         [[UIBarButtonItem appearanceWhenContainedIn:[UISearchBar class], nil]
          setTitleTextAttributes:
-         [NSDictionary dictionaryWithObjectsAndKeys:COLOR_WITH_HEX(0xff7116),NSForegroundColorAttributeName,nil]
+         [NSDictionary dictionaryWithObjectsAndKeys:_tintColor,NSForegroundColorAttributeName,nil]
          forState:UIControlStateNormal];
         _searchBar = searchBar;
         return searchBar;
