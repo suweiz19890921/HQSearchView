@@ -22,9 +22,9 @@
     self = [super initWithFrame:frame];
     if(self)
     {
-        self.placeholder = @"搜索";
+        _placeholder = @"搜索";
         self.backgroundColor = [UIColor clearColor];
-        self.tintColor = COLOR_WITH_HEX(0xff7116);
+        _tintColor = COLOR_WITH_HEX(0xff7116);
         [self loadSubview];
     }
     return self;
@@ -105,6 +105,11 @@
     self.searchBar.placeholder = placeholder;
 }
 
+- (void)setTintColor:(UIColor *)tintColor
+{
+    _tintColor = tintColor;
+    self.searchBar.tintColor = tintColor;
+}
 #pragma mark - getter
 - (UIView *)searchBarBG
 {
@@ -132,8 +137,8 @@
         searchBar.barTintColor      = COLOR_WITH_HEX(0xf0eff5);
         searchBar.layer.borderColor = COLOR_WITH_HEX(0xf0eff5).CGColor;
         searchBar.layer.borderWidth = 1.0f;
-        searchBar.tintColor         = self.tintColor;
-        
+        searchBar.tintColor         = _tintColor;
+        searchBar.placeholder = _placeholder;
         [[UIBarButtonItem appearanceWhenContainedIn:[UISearchBar class], nil]
          setTitleTextAttributes:
          [NSDictionary dictionaryWithObjectsAndKeys:COLOR_WITH_HEX(0xff7116),NSForegroundColorAttributeName,nil]
