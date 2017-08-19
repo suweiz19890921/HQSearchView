@@ -25,7 +25,7 @@
 @property (nonatomic, strong) NSString *placeholder;
 
 /** 搜索结果的视图,可以替换为自己定制的 */
-@property (weak, nonatomic) UITableView *tableView;
+@property (strong, nonatomic) UITableView *tableView;
 
 /** 显示 */
 - (void)showInView:(UIView *)view;
