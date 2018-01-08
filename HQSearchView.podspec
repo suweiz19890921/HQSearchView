@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "HQSearchView"
-  s.version      = "0.0.7"
+  s.version      = "0.0.8"
   s.summary      = "HQSearchView"
 
   # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   HQSearchView.
                    DESC
 
-  s.homepage     = "http://192.168.1.249:10080/liuhuanqing/HQSearchView"
+  s.homepage     = "https://github.com/suweiz19890921/HQSearchView.git"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "ssh://git@git.solot.co:10022/liuhuanqing/HQSearchView.git", :tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/suweiz19890921/HQSearchView.git", :tag => s.version.to_s }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
